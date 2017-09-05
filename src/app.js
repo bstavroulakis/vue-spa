@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import AppLayout from './theme/Layout.vue'
-
-console.log(AppLayout)
+import router from './router'
 
 const app = new Vue({
+  router,
   ...AppLayout
 })
 
-export { app }
+export { app, router }
